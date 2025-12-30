@@ -1,4 +1,5 @@
 import { Sun } from "lucide-react"
+import { Phone } from "lucide-react"
 
 export default function Navbar() {
   return (
@@ -11,7 +12,10 @@ export default function Navbar() {
                 <span className="navbar__subtitle text-black text-sm">Quality equipment.</span>
             </div>
           </div>
-          <p className="navbar__contact">Contact: (555) 123-4567</p>
+          <div className="flex gap-3">
+            <Phone className="navbar__phone text-black size-9 stroke-2" strokeWidth={1.5} />
+            <p className="navbar__contact">Contact: (555) 123-4567</p>
+          </div>
         </div>
     </nav>
   )
