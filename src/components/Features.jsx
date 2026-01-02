@@ -1,7 +1,7 @@
 export default function Features() {
   return (
     <section className="features py-12 bg-white text-center">
-        <div className="mb-8">
+        <div className="mb-8 text-3xl">
             <h2 className="font-bold">Paneles Disponibles (6)</h2>
             <span className="font-light">Explore nuestro inventario de paneles solares</span>
         </div>
