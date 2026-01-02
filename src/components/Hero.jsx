@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <div className="hero flex flex-col justify-center items-center text-center py-20 px-4 bg-linear-to-b from-amber-400 via-amber-500 to-amber-600">
         <div className="hero__container max-w-4xl mx-auto">
-          <h1 className="hero__title text-2xl font-extrabold mb-6 text-white">Paneles solares de alta eficiencia</h1>
+          <h1 className="hero__title text-3xl font-extrabold text-white">Paneles solares de alta eficiencia</h1>
         </div>
         <div className="hero__icons-grid grid grid-cols-3 gap-8 mt-10">
             <div className="flex flex-col items-center gap-5">
