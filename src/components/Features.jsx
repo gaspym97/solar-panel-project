@@ -33,7 +33,7 @@ export default function Features() {
                             <span>in stock: 3 units (example)</span>
                         </div>
                         <div className="flex space-x-3">
-                            <CircleCheckBig className="stroke-2 text-amber-500 inline-block text-green-500"/>
+                            <CircleCheckBig className="stroke-2 inline-block text-green-500"/>
                             <span className="text-green-500">Tested and working (example)</span>
                         </div>
                     </div>
