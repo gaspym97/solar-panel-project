@@ -4,7 +4,7 @@ export default function Footer() {
         <div className="footer__container max-w-7xl mx-auto flex justify-center items-center flex-col space-y-3">
           <p className="footer__text text-amber-800 text-2xl font-bold text-center italic underline">Interested in any of these panels?</p>
           <p className="text-amber-800">Contact us for more details:</p>
-          <p className="text-amber-800">Call (555) 123-4567</p>
+          <button className="contact-button bg-amber-500 text-white w-full rounded-lg h-12 max-h-12 hover:bg-amber-600 active:bg-amber-700" >Call: (555) 123-4567</button>
         </div>
     </footer>
   )
