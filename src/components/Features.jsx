@@ -37,7 +37,7 @@ export default function Features() {
                             <span className="text-green-500">Tested and working (example)</span>
                         </div>
                     </div>
-                    <button className="contact-button bg-amber-500 text-white w-full rounded-lg h-12 max-h-12" >Contact to buy</button>
+                    <button className="contact-button bg-amber-500 text-white w-full rounded-lg h-12 max-h-12 hover:bg-amber-600 active:bg-amber-700" >Contact to buy</button>
                 </div>
             </div>
 
