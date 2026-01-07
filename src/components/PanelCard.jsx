@@ -44,15 +44,15 @@ export default function PanelCard({
                     </div>
                     <span className="line-clamp-2 mb-3 mt-3 text-left">{description}</span>
                     <div className="space-y-2 mb-4">
-                        <div className="flex space-x-3">
+                        <div className="flex space-x-3 items-center">
                             <Zap className="stroke-2 text-amber-500 inline-block"/>
                             <span>Power: {power}</span>
                         </div>
-                        <div className="flex space-x-3">
+                        <div className="flex space-x-3 items-center">
                             <Package className="stroke-2 text-amber-500 inline-block"/>
                             <span>in stock: {stock} units</span>
                         </div>
-                        <div className="flex space-x-3">
+                        <div className="flex space-x-3 items-center">
                             <CircleCheckBig className="stroke-2 inline-block text-green-500"/>
                             <span className="text-green-500">{tested}</span>
                         </div>
