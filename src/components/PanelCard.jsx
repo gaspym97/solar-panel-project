@@ -1,4 +1,19 @@
-import { Zap, Package, CircleCheckBig } from "lucide-react"
+import { Zap, Package, CircleCheckBig, LampCeilingIcon } from "lucide-react"
+
+const conditionStyle = {
+    good: {
+        label: "Good",
+        badge: "bg-amber-100 text-amber-700",
+    },
+    verygood: {
+        label: "Very Good",
+        badge: "bg-blue-100 text-blue-700",
+    },
+    excellent: {
+        label: "Excellent",
+        badge: "bg-green-100 text-green-700",
+    },
+}
 
 export default function PanelCard({
     image,
@@ -10,6 +25,10 @@ export default function PanelCard({
     stock,
     tested
 }) {
+
+    const conditionInfo = 
+    conditionStyle[String(condition).toLowerCase().replace(/\s+/g,"")] || conditionStyle.good;
+
     return (
         <div className="feature-item rounded-3xl shadow-lg overflow-hidden">
                 <div className="feature-image">
@@ -19,9 +38,9 @@ export default function PanelCard({
                     <div className="flex justify-between mb-3">
                         <div className="flex flex-col">
                             <h2 className="mb-1">{name}</h2>
-                            <span className="inline-flex border-0 rounded-full bg-amber-100 text-amber-700 justify-center w-16 text-xs px-2 py-1">{condition}</span>
+                            <span className={`inline-flex border-0 rounded-full justify-center w-16 text-xs px-2 py-1 ${conditionInfo.badge}`}>{conditionInfo.label}</span>
                         </div>
-                        <span className="text-amber-500 font-semibold">${price}</span>
+                        <span className="font-semibold text-amber-500">${price}</span>
                     </div>
                     <span className="line-clamp-2 mb-3 mt-3 text-left">{description}</span>
                     <div className="space-y-2 mb-4">
