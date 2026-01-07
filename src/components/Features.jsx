@@ -4,8 +4,8 @@ export default function Features() {
   return (
     <section className="features py-12 bg-white text-center">
         <div className="mb-8 text-3xl">
-            <h2 className="font-medium">Paneles Disponibles (6)</h2>
-            <span className="font-thin">Explore nuestro inventario de paneles solares</span>
+            <h2 className="font-medium">Available Panels (6)</h2>
+            <span className="font-thin text-2xl">Browse our current inventory.</span>
         </div>
         <div className="features-grid grid grid-cols-1 ml-6 mr-6 gap-6">
             <PanelCard

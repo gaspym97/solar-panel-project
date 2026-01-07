@@ -8,9 +8,9 @@ function App() {
 
   return (
     <>
-      <div className="min-h-screen bg-gray-50 flex flex-col">
+      <div className="min-h-screen flex flex-col">
           <Navbar />
-        <main className="flex-grow pt-24">
+        <main className="flex-grow">
           <Hero />
           <Features />
         </main>
