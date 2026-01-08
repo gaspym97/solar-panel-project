@@ -1,4 +1,4 @@
-import { Zap, Package, CircleCheckBig, LampCeilingIcon } from "lucide-react"
+import { Zap, Package, CircleCheckBig } from "lucide-react"
 
 const conditionStyle = {
     good: {
@@ -31,14 +31,17 @@ export default function PanelCard({
 
     return (
         <div className="feature-item rounded-3xl shadow-lg overflow-hidden">
-                <div className="feature-image">
-                    <img src={image} alt="solar panels" />
+                <div className="feature-image h-48 w-full overflow-hidden">
+                    <img 
+                    src={image} 
+                    alt="solar panels"
+                    className="w-full h-full object-cover" />
                 </div>
                 <div className="p-5 text-xl">
                     <div className="flex justify-between mb-3">
                         <div className="flex flex-col">
-                            <h2 className="mb-1">{name}</h2>
-                            <span className={`inline-flex border-0 rounded-full justify-center w-16 text-xs px-2 py-1 ${conditionInfo.badge}`}>{conditionInfo.label}</span>
+                            <h2 className="mb-1 text-2xl">{name}</h2>
+                            <span className={`inline-flex border-0 rounded-full justify-center text-xs px-2 py-1 ${conditionInfo.badge}`}>{conditionInfo.label}</span>
                         </div>
                         <span className="font-semibold text-amber-500">${price}</span>
                     </div>

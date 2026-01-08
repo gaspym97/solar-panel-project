@@ -4,10 +4,10 @@ export default function Features() {
   return (
     <section className="features py-12 bg-white text-center">
         <div className="mb-8 text-3xl">
-            <h2 className="font-medium">Available Panels (6)</h2>
-            <span className="font-thin text-2xl">Browse our current inventory.</span>
+            <h2 className="font-medium md:text-5xl">Available Panels (6)</h2>
+            <span className="font-thin text-xl md:text-2xl">Browse our current inventory.</span>
         </div>
-        <div className="features-grid grid grid-cols-1 ml-6 mr-6 gap-6">
+        <div className="features-grid grid grid-cols-1 ml-6 mr-6 gap-6 md:grid-cols-2 lg:grid-cols-3">
             <PanelCard
                 image="https://images.unsplash.com/photo-1624397640148-949b1732bb0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzb2xhciUyMHBhbmVscyUyMHJvb2Z8ZW58MXx8fHwxNzY2MTc5NjU5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                 name="SolarMax Pro"

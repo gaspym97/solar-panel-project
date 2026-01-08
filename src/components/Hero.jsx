@@ -4,28 +4,28 @@ import { Package } from "lucide-react"
 
 export default function Hero() {
   return (
-    <div className="hero flex flex-col justify-center text-center px-4 bg-linear-to-b from-amber-400 via-amber-500 to-amber-600 h-96 pt-36">
+    <div className="hero flex flex-col justify-center text-center px-4 bg-linear-to-b from-amber-400 via-amber-500 to-amber-600 h-96 pt-36 md:pb-16">
         <div className="hero__container max-w-4xl mx-auto">
-          <h1 className="hero__title text-2xl font-extrabold text-white">Quality Solar Panels</h1>
+          <h1 className="hero__title text-2xl font-extrabold text-white md:text-4xl">Quality Solar Panels</h1>
         </div>
         <div className="hero__icons-grid grid grid-cols-3 gap-8 mt-10">
             <div className="flex flex-col items-center gap-5">
-                <div className="bg-white-40 bg-white/10 size-14 rounded-full flex items-center justify-center backdrop-blur-md shadow-md shadow-amber-200-50">
-                    <Zap className="hero__icon text-white size-9 stroke-2" strokeWidth={1.5} />
+                <div className="bg-white-40 bg-white/10 size-14 rounded-full flex items-center justify-center backdrop-blur-md shadow-md shadow-amber-200-50 md:size-20">
+                    <Zap className="hero__icon text-white size-9 stroke-2 md:size-14" strokeWidth={1.5} />
                 </div>
-                <nav className="italic text-white">High Efficiency!</nav>
+                <nav className="italic text-white md:text-2xl">High Efficiency!</nav>
             </div>
             <div className="flex flex-col items-center gap-5">
-                <div className="bg-white-40 bg-white/10 size-14 rounded-full flex items-center justify-center backdrop-blur-md shadow-md shadow-amber-200-50">
-                    <CircleDollarSign className="hero__icon text-white size-9 stroke-2" strokeWidth={1.5} />
+                <div className="bg-white-40 bg-white/10 size-14 rounded-full flex items-center justify-center backdrop-blur-md shadow-md shadow-amber-200-50 md:size-20">
+                    <CircleDollarSign className="hero__icon text-white size-9 stroke-2 md:size-14" strokeWidth={1.5} />
                 </div>
-                <nav className="italic text-white">Great Prices!</nav>
+                <nav className="italic text-white md:text-2xl">Great Prices!</nav>
             </div>
             <div className="flex flex-col items-center gap-5">
-                <div className="bg-white-40 bg-white/10 size-14 rounded-full flex items-center justify-center backdrop-blur-md shadow-md shadow-amber-200-50">
-                    <Package className="hero__icon text-white size-9 stroke-2" strokeWidth={1.5} />
+                <div className="bg-white-40 bg-white/10 size-14 rounded-full flex items-center justify-center backdrop-blur-md shadow-md shadow-amber-200-50 md:size-20">
+                    <Package className="hero__icon text-white size-9 stroke-2 md:size-14" strokeWidth={1.5} />
                 </div>
-                <nav className="italic text-white">In Stock Now!</nav>
+                <nav className="italic text-white md:text-2xl">In Stock Now!</nav>
             </div>
         </div>
     </div>
